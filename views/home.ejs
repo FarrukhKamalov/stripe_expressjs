@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe API nodejs</title>
+</head>
+<body>
+    <h1>👋 Hello Payment Integration</h1>
+    <form action="payment" method="POST">
+        <script
+            src="//checkout.stripe.com/v3/checkout.js"
+            class="stripe-button"
+            data-key="<%= key %>"
+            data-amount="700"
+            data-currency="usd"
+            data-name="Kamalov Farrukh"
+            data-description="Buy Node.js Complete Course"
+            data-locale="auto" >
+            </script>
+        </form>
+</body>
+</html>
